@@ -17,7 +17,7 @@ function root() {
     } else {
 
         if (email === user && password === pass) {
-            document.getElementById("enlace").href = "principal.html";
+            document.getElementById("enlace").href = "./principal.html";
         } else if (email !== user && password !== pass) {
             alert("Nombre de Usuario y Contraseña Incorrectas");
         } else if (password === pass) {
