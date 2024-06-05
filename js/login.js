@@ -1,29 +1,17 @@
 function root() {
 
-    user = "Cesar4280"; pass = "WebDesign2020";
+    const CREDENTIALS = { USERNAME: "Cesar4280", PASSWORD: "WebDesign2020" };
 
-    email = document.getElementById("email").value;
-    password = document.getElementById("password").value;
+    const username = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    if (email == "" || password == "") {
-        
-        if (email == "") {
-            alert("Complete el campo usuario");
-        } 
-        if (password == "") {
-            alert("Complete el campo contraseña");
-        }
-
+    if (username || password) {
+        if (!username) alert("Complete el campo usuario");
+        if (!password) alert("Complete el campo contraseña");
     } else {
-
-        if (email === user && password === pass) {
+        if (username === CREDENTIALS.USERNAME && password === CREDENTIALS.PASSWORD)
             document.getElementById("enlace").href = "./principal.html";
-        } else if (email !== user && password !== pass) {
-            alert("Nombre de Usuario y Contraseña Incorrectas");
-        } else if (password === pass) {
-            alert("Nombre de Usuario Incorrecto");
-        } else {
-            alert("Contraseña Incorrecta");
-        }
+        else
+            alert("Nombre de Usuario o Contraseña Incorrecta");
     }
 }
