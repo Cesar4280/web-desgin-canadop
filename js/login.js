@@ -1,5 +1,5 @@
 const EMPTY_STRING = "";
-const CREDENTIALS = Object.freeze({ USERNAME: "ces", PASSWORD: "123" });
+const CREDENTIALS = Object.freeze({ USERNAME: "Cesar4280", PASSWORD: "WebDesign2020" });
 
 const loginForm = document.forms.namedItem("login");
 const loginInputs = [...loginForm.elements].toSpliced(2, 1);
