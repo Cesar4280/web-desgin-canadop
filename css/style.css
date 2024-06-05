@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+.lead {
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    letter-spacing: 0.5;
+}
+.navbar{
+    background-color: rgba(255, 166, 0);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    min-height: 120px;
+}
+.logo-brand{
+    min-width: 160px;
+    max-width: 180px;
+}
+.nav-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffffd2;
+}
+.nav-link:hover{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.icon{
+    max-width: 35px;
+    max-height: 35px;
+}
+.nav-item{
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+}
+.nav-item:hover {
+    background: rgba(248, 99, 0, 0.664);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+h3{
+    font-family: 'Roboto Condensed';
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+.bg-content{
+    background-image: url('../img/background-body2.jpg');
+    position: relative;
+}
+.bg-content:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.753);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.text-Poppins{
+    font-family: 'Poppins';
+    color: rgba(218, 138, 95, 1);/*rgba(128, 0, 32, .75)*/
+    font-size: 0.95rem;
+}
+.text-Montserrat{
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgba(141, 75, 10, .6);
+}
+.bg-trans-4{
+    background: rgba(226, 207, 205, 0.45);
+}
+.bg-trans-3{
+    background: rgba(235, 223, 207, 0.45);
+}
+.bg-trans-2{
+    background: rgba(252, 225, 217, 0.45);
+}
+.bg-trans-1{
+    background: rgba(228, 228, 227, 0.45);
+}
+.my-color{
+    color: chocolate;
+    font-weight: 200;
+}
+.text-stroke{
+    -webkit-text-stroke: .5px rgba(0, 0, 0, 0.781);
+    -moz-text-stroke: .8px rgba(0, 0, 0, 0.781);
+}
+.navbar-toggler{
+    font-size: 40px;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.footprint-toogler{
+    min-width: 40px;
+    max-width: 40px;
+}
+.bg-copyright{
+    background:  rgb(255, 123, 0);
+}
+.text-antiquewhite{
+    color: antiquewhite;
+}
+.page-content {
+    flex: 1 0 auto;
+}
+.sticky-footer {
+    flex-shrink: none;
+}
+.alert-black{
+    color: white;
+    /*background-color: rgba(255, 166, 0, 0.856);*/
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.form-background{
+    background-image: url('../img/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-modal{
+    background-image: url('../img/purple.jpg');
+}
+.combo{
+    margin-top: 32px;
+}
+.text-form{
+    font-family: 'Montserrat';
+}

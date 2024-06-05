@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+.card{
+    background-color: #fff8f5;
+}
+h4, .custom-select{
+    color: chocolate;
+}
+form{
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: chocolate;
+}
+body{
+    background-image: url('../img/picture-5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h4{
+    font-family: 'Montserrat';
+}
+.google-maps {
+    border: rgb(184, 184, 184) groove 2px;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

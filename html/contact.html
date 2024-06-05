@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-contact.css">
+    <script src="../js/form-validation.js"></script>
+</head>
+
+<body>
+    <!--Este es el menu fixed-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" class="logo-brand" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/footprint.svg" class="footprint-toogler" alt="icon">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/home.png" alt="home">
+                        <a class="nav-link" href="../principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/service.png" alt="service">
+                        <a class="nav-link" href="service.html">Servicios</a>
+                    </li>
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/about.png" alt="about">
+                        <a class="nav-link" href="about.html">Acerca</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/contact.png" alt="contact">
+                        <a class="nav-link text-white" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/vaccination.png" alt="contact">
+                        <a class="nav-link" href="vaccination.html">Vacunación</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/doubt.png" alt="contact">
+                        <a class="nav-link" href="doubt.html">Dudas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Este es un formulario dentro de una card-->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow my-text">
+                    <img src="../img/anuncio.jpg" class="card-img-top img-fluid" style="min-height: 160px" alt="card-1">
+                    <div class="card-body">
+                        <h4 class="card-title text-center my-5">Formulario de Adopción</h4>
+                        <form id="form1" action="procesar.php" method="POST" class="needs-validation" novalidate>
+                            <div class="form-group form-row">
+                                <div class="col-sm-12 col-md-6">
+                                    <label for="nombre">Nombres</label>
+                                    <input name="nombre" type="text" class="form-control" id="nombre" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="apellido">Apellidos</label>
+                                    <input name="apellido" type="text" class="form-control" id="apellido" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col">
+                                    <label for="cedula">Cedula</label>
+                                    <input name="cedula" type="text" class="form-control" id="cedula" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col-sm-12 col-md-8">
+                                    <label for="direccion">Dirección</label>
+                                    <input name="direccion" type="text" class="form-control" id="direccion" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="barrio">Barrio</label>
+                                    <input name="barrio" type="text" class="form-control" id="barrio" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col-sm-12 col-md-6">
+                                    <label for="celular">Celular</label>
+                                    <input name="celular" type="tel" class="form-control" id="celular" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-3 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="edad">Edad</label>
+                                    <input name="edad" type="number" class="form-control" id="edad" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-3 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="hijos">Hijos</label>
+                                    <input name="hijos" type="number" class="form-control" id="hijos" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                            </div>
+                            <label>Estado civil</label>
+                            <div class="form-group form-row ml-3">
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Soltero" type="radio" class="custom-control-input" id="soltero" required>
+                                    <label class="custom-control-label" for="soltero">Soltero</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Cazado" type="radio" class="custom-control-input" id="cazado" required>
+                                    <label class="custom-control-label" for="cazado">Cazado</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Separado" type="radio" class="custom-control-input" id="separado" required>
+                                    <label class="custom-control-label" for="separado">Separado</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Divorciado" type="radio" class="custom-control-input" id="divorciado" required>
+                                    <label class="custom-control-label" for="divorciado">Divorciado</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Viudo" type="radio" class="custom-control-input" id="viudo" required>
+                                    <label class="custom-control-label" for="viudo">Viudo</label>
+                                </div>
+                                <div class="custom-control custom-radio col-sm-12 col-md-2">
+                                    <input name="estadoCivil" value="Union libre" type="radio" class="custom-control-input" id="unionLibre" required>
+                                    <label class="custom-control-label" for="unionLibre">Union libre</label>
+                                    <div class="invalid-feedback">Elija una opción</div>
+                                </div>
+                            </div>
+                            <div class="form-row form-group">
+                                <div class="col-sm-12 col-md-8">
+                                    <label for="profesion">Profesión</label>
+                                    <input name="profesion" type="text" class="form-control" id="profesion" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 combo">
+                                    <select name="nivelAcademico" class="custom-select" required>
+                                        <option value="">Nivel academico</option>
+                                        <option value="Preescolar">Pre-escolar</option>
+                                        <option value="Primaria">Primaria</option>
+                                        <option value="Secundaria">Secundaria</option>
+                                        <option value="Tecnico">Tecnico</option>
+                                        <option value="Tecnologo">Tecnologo</option>
+                                        <option value="Profesional">Profesional</option>
+                                        <option value="Especializacion">Especialización</option>
+                                        <option value="Maestria">Maestría</option>
+                                        <option value="Doctorado">Doctorado</option>
+                                    </select>
+                                    <div class="invalid-feedback">Seleccione una opción valida</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-row">
+                                <div class="col-sm-12 col-md-6">
+                                    <label for="empresa">Empresa</label>
+                                    <input name="empresa" type="text" class="form-control" id="empresa" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-3  mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="cargo">Cargo</label>
+                                    <input name="cargo" type="text" class="form-control" id="cargo" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                                <div class="col-sm-12 col-md-3 mt-3 mt-md-0 mt-lg-0 mt-xl-0">
+                                    <label for="telefono">Telefono</label>
+                                    <input name="telefono" type="tel" class="form-control" id="telefono" required>
+                                    <div class="valid-feedback">¡Ok válido!</div>
+                                    <div class="invalid-feedback">Complete el campo</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-white-70">hotmail, gmail, outlook, twitter o facebook</small>
+                                <div class="invalid-feedback">Complete el campo</div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">Aceptar terminos y condiciones</label>
+                                <div class="valid-feedback">¡Ok válido!</div>
+                                <div class="invalid-feedback">Acepte terminos</div>
+                            </div>
+                            <div class="form-group">
+                            <button type="submit" class="btn btn-success w-25 mt-3" name="Enviando">Enviar</button>
+                            <button type="reset" class="btn btn-secondary w-25 mt-3">Borrar</button></div>
+                        </form>
+                        <div class="google-maps container mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.7979777419378!2d-76.50789418467312!3d3.399412952509742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a12bd39639ed%3A0x2e2f482208da9adf!2sHuellitas%20Felices!5e0!3m2!1ses-419!2sco!4v1588995001686!5m2!1ses-419!2sco"></iframe>
+                        </div>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Este es un footer sección de pie de pagina-->
+  <footer class="sticky-footer" class="py-4 text-white-50" style="background: rgb(243, 175, 16);">
+    <div class="page-content">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1 class="font-weight-light mt-4 text-white">Donaciones</h1>
+            <hr>
+            <address class="lead">
+              <a href="#" class="text-antiquewhite text-decoration-none"><em>www.canadop.com.co</em></a>
+              <br>
+              <span class="text-light">Carrera 45 N 20-10 Barranquilla-Colombia</span>
+              <br>
+              <span class="text-light mr-1">(+57) 3187921882</span>
+              <span class="text-light">095-3432515</span>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center py-3 bg-copyright">
+      <small class="text-light">&copy; 2020 Copyright: Cesar Design Web</small>
+    </div>
+  </footer>
+
+    <!--jQuery, Popper, Bootstrap JS-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

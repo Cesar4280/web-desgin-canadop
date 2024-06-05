@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-service.css">
+    <script src="../js/form-validation.js"></script>
+</head>
+
+<body>
+    <!--Este es el menu fixed-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" class="logo-brand" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../img/footprint.svg" class="footprint-toogler" alt="icon">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/home.png" alt="home">
+                        <a class="nav-link" href="../principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/service.png" alt="service">
+                        <a class="nav-link text-white" href="service.html">Servicios</a>
+                    </li>
+                    <li class="nav-item d-flex mr-0 mr-ms-0 mr-md-0 mr-lg-3 mr-xl-3">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/about.png" alt="about">
+                        <a class="nav-link" href="about.html">Acerca</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/contact.png" alt="contact">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/vaccination.png" alt="contact">
+                        <a class="nav-link" href="vaccination.html">Vacunación</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img class="icon mr-3 mr-ms-3 mr-md-3 mr-lg-0 mr-xl-0" src="../img/doubt.png" alt="contact">
+                        <a class="nav-link" href="doubt.html">Dudas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Este es un jumbotron utilizado para mostrar contenido de manera destacada-->
+    <div class="container-fluid bg-content mb-5 alto">
+        <div class="container">
+            <marquee class="text-center pt-5" scrollamount="10">
+                <h1 class="display-4 text-light font-weight-bold letter">¡Tenemos mucho amor para dar!</h1>
+            </marquee>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-4 col-12">
+                <img src="../img/foto-1.jpg" class="img-fluid img-thumbnail control" alt="">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-4 col-12 mt-lg-0 mt-md-4 col-sm-4 mt-sm-0 mt-4">
+                <img src="../img/foto-2.jpg" class="img-fluid img-thumbnail" alt="">
+            </div>
+            <div class="col-lg-4 mt-lg-0 col-md-12 mt-md-4 col-sm-4 mt-sm-0 col-12 mt-4">
+                <img src="../img/foto-3.png" class="img-fluid img-thumbnail" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container table-responsive mt-5">
+        <table class="table table-color table-hover rounded-lg text-center" bordercolor="black">
+            <thead class="bg-color font-weight-bold">
+                <tr class="font-weight-bold text-white">
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Raza</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Tamaño</th>
+                    <th scope="col">Ingreso</th>
+                    <th scope="col">Esterilizado</th>
+                    <th scope="col">Descripción</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle">COD001</td>
+                    <td class="align-middle">Lolita</td>
+                    <td class="align-middle">Hembra</td>
+                    <td class="align-middle">Beagle</td>
+                    <td class="align-middle">Cafe</td>
+                    <td class="align-middle">23cm</td>
+                    <td class="align-middle">15/01/2020</td>
+                    <td class="align-middle">Si</td>
+                    <td class="align-middle text-justify">Es pacifica y sabe dar la patica</td>
+                </tr>  
+                <tr>
+                    <td class="align-middle">COD002</td>
+                    <td class="align-middle">Peki</td>
+                    <td class="align-middle">Hembra</td>
+                    <td class="align-middle">Bulldog</td>
+                    <td class="align-middle">Blanco</td>
+                    <td class="align-middle">30cm</td>
+                    <td class="align-middle">08/03/2020</td>
+                    <td class="align-middle">Si</td>
+                    <td class="align-middle text-justify">Energenita y sociable</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">COD003</td>
+                    <td class="align-middle">Benji</td>
+                    <td class="align-middle">Hembra</td>
+                    <td class="align-middle">Husky</td>
+                    <td class="align-middle">Blanco</td>
+                    <td class="align-middle">25cm</td>
+                    <td class="align-middle">02/04/2020</td>
+                    <td class="align-middle">Si</td>
+                    <td class="align-middle text-justify">Le gusta salir de paseo</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">COD004</td>
+                    <td class="align-middle">Lorens</td>
+                    <td class="align-middle">Macho</td>
+                    <td class="align-middle">Pitbull</td>
+                    <td class="align-middle">Gris</td>
+                    <td class="align-middle">28cm</td>
+                    <td class="align-middle">21/02/2020</td>
+                    <td class="align-middle">Si</td>
+                    <td class="align-middle text-justify">Es sociable y le gusta estar en familia</td>
+                </tr>
+                <tr>
+                    <td class="align-middle">COD005</td>
+                    <td class="align-middle">Poseidon</td>
+                    <td class="align-middle">Macho</td>
+                    <td class="align-middle">Rottweiler</td>
+                    <td class="align-middle">Negro</td>
+                    <td class="align-middle">30cm</td>
+                    <td class="align-middle">01/01/2020</td>
+                    <td class="align-middle">Si</td>
+                    <td class="align-middle text-justify">Saltarin y jugeton con los niños</td>
+                </tr>     
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <form method="POST" class="needs-validation" novalidate>
+            <div class="form-group form-row">
+                <div class="col-12">
+                    <h3 class="estilo">Realiza tu solicitud aqui</h3>
+                </div>
+                <div class="col-4">
+                    <select name="codigo" class="custom-select text-Poppins" required>
+                        <option value="">Nombre de canino</option>
+                        <option value="COD001">Lolita</option>
+                        <option value="COD002">Peki</option>
+                        <option value="COD003">Benji</option>
+                        <option value="COD004">Lorens</option>
+                        <option value="COD005">Poseidon</option>
+                    </select>
+                    <div class="invalid-feedback">Seleccione una opción valida</div>
+                </div>
+                <div class="col-8">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success letter" data-toggle="modal" data-target="#ventanaModal">Adoptar</button>
+                </div>
+            </div>
+
+            <!--Ventana Modal -->
+            <div class="modal fade letter" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-success font-weight-bold" id="tituloVentana">Finalizando tu adopción...</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="text-muted">Recuerde haber llenado el formulario de adopción en la sección de contacto.</h6>
+                            <br>
+                            <label for="cedula" class="text-secondary">Adoptante</label>
+                            <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Digite su cedula" required>
+                            <div class="invalid-feedback">Caracter obligatorio</div>
+                            <br>
+                            <p class="font-italic"><small>Cuidelo y quierelo como el a tí.</small></p>
+                        </div>
+                        <div class="modal-footer text-white">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" name="Enviar" class="btn btn-success">
+                                <a href="contact.html" class="text-decoration-none text-white">Aceptar</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Este es un footer sección de pie de pagina-->
+    <footer class="sticky-footer mt-5" class="py-4 text-white-50" style="background: rgb(243, 175, 16);">
+        <div class="page-content">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <h1 class="font-weight-light mt-4 text-white">Donaciones</h1>
+                        <hr>
+                        <address class="lead">
+                            <a href="#" class="text-antiquewhite text-decoration-none"><em>www.canadop.com.co</em></a>
+                            <br>
+                            <span class="text-light">Carrera 45 N 20-10 Barranquilla-Colombia</span>
+                            <br>
+                            <span class="text-light mr-1">(+57) 3187921882</span>
+                            <span class="text-light">095-3432515</span>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center py-3 bg-copyright">
+            <small class="text-light">&copy; 2020 Copyright: Cesar Design Web</small>
+        </div>
+    </footer>
+
+    <!--jQuery, Popper, Bootstrap JS-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

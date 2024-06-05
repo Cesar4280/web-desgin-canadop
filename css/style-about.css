@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+    background-image: url('../img/picture-5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2, p, .card-body > a {
+    font-family: 'Poppins';
+}
+h2{
+    color: brown;
+}
+.card-header img{
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.card-header:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}

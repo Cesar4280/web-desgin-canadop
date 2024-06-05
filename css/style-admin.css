@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+h1{
+    font-family: 'Poppins';
+}
+body{
+    background: rgba(3, 90, 166, 1);
+}
+table{
+    border: inset 3px rgb(80, 79, 79);
+    font-family: 'Manrope';
+    font-weight: 300;
+}
+.thead-orange{
+    background: rgb(255, 145, 0);
+    color: rgb(255, 255, 255);
+}
+.banner{
+    height: 90px;
+    font-family: 'Didact Gothic';
+    font-size: 1rem;
+}
