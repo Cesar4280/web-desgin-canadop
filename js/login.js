@@ -1,17 +1,23 @@
-function root() {
+const EMPTY_STRING = "";
+const CREDENTIALS = Object.freeze({ USERNAME: "ces", PASSWORD: "123" });
 
-    const CREDENTIALS = { USERNAME: "Cesar4280", PASSWORD: "WebDesign2020" };
+const loginForm = document.forms.namedItem("login");
+const loginInputs = [...loginForm.elements].toSpliced(2, 1);
+const loginButtonLink = loginForm.querySelector("a");
+console.log(loginInputs, loginButtonLink);
 
-    const username = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+loginButtonLink.addEventListener("click", handleClickSignIn);
 
-    if (username || password) {
-        if (!username) alert("Complete el campo usuario");
-        if (!password) alert("Complete el campo contraseña");
-    } else {
-        if (username === CREDENTIALS.USERNAME && password === CREDENTIALS.PASSWORD)
-            document.getElementById("enlace").href = "./principal.html";
-        else
-            alert("Nombre de Usuario o Contraseña Incorrecta");
+function handleClickSignIn(event) {
+
+    if (loginInputs.some(({ value }) => value.trim() === EMPTY_STRING)) {
+        loginInputs.forEach(input => input.value.trim() === EMPTY_STRING &&
+            alert(`Complete el campo ${input.id === "username" ? "usuario" : "contraseña"}`)
+        );
+        event.preventDefault();
+    }
+    else if (loginInputs.some(input => input.value !== CREDENTIALS[input.id.toUpperCase()])) {
+        alert("Nombre de Usuario o Contraseña Incorrectas");
+        event.preventDefault();
     }
 }
