@@ -1,6 +1,6 @@
 function root() {
 
-    user = "Cesar4280"; pass = "123";
+    user = "Cesar4280"; pass = "WebDesign2020";
 
     email = document.getElementById("email").value;
     password = document.getElementById("password").value;
